@@ -8,6 +8,10 @@
     outline: none;
 }
 
+button {
+    cursor: pointer;
+}
+
 section {
     max-width: 1400px;
     margin: 0 auto;
@@ -1232,6 +1236,7 @@ footer {
     top: 25px;
     right: 25px;
     width: 25px;
+    cursor: pointer;
 }
 
 .modal-checkbox {

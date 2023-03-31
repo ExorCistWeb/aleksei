@@ -41,14 +41,14 @@
     <header>
         <div class="pc_header">
             <div class="header_links">
-                <a href="#about">Обо мне</a>
-                <a href="">Новости</a>
-                <a href="">Методы работы</a>
-                <a href="">Услуги и цены</a>
-                <a href="">Документы</a>
-                <a href="">Награды</a>
-                <a href="">Отзывы</a>
-                <a href="">Контакты</a>
+                <a href="#tab_about">Обо мне</a>
+                <a href="#news">Новости</a>
+                <a href="#method">Методы работы</a>
+                <a href="#price">Услуги и цены</a>
+                <a href="#document">Документы</a>
+                <a href="#awards">Награды</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#contact">Контакты</a>
             </div>
             <div class="soc_links">
                 <a href=""><img src="img/icon/whatsapp.svg" alt="Ватсапп"></a>
@@ -56,13 +56,13 @@
                 <a href=""><img src="img/icon/vk.svg" alt="ВКонтакте"></a>
                 <a href=""><img src="img/icon/ok.svg" alt="Одноклассники"></a>
             </div>
-            <button class="call_btn" id="openModal">Заказать звонок</button>
+            <button class="call_btn openModal">Заказать звонок</button>
         </div>
     </header>
     <div class="pre_nav">
-        <a href=""><img src="img/icon/loc.svg" alt="Адрес">ул. Цветной бульвар, д.19, с.4, каб. 209</a>
-        <a href=""><img src="img/icon/mail.svg" alt="Почта">kravchenko-aleksey@yandex.ru</a>
-        <a href=""><img src="img/icon/tel.svg" alt="Телефон"> +7 (926) 342-10-41</a>
+        <a href="https://yandex.ru/maps/-/CCUWyWc3hB"><img src="img/icon/loc.svg" alt="Адрес">ул. Цветной бульвар, д.19, с.4, каб. 209</a>
+        <a href="mail:kravchenko-aleksey@yandex.ru"><img src="img/icon/mail.svg" alt="Почта">kravchenko-aleksey@yandex.ru</a>
+        <a href="tel:+79263421041"><img src="img/icon/tel.svg" alt="Телефон"> +7 (926) 342-10-41</a>
     </div>
 
     <section id="about">
@@ -159,7 +159,7 @@
             </div>
         </div>
     </section>
-    <section class="tab_about">
+    <section id="tab_about">
         <div class="tabs_about">
             <div class="tab">
                 <button class="tablinks active" onclick="openTab(event, 'Tab1')"><img src="img/icon/doctor.svg" alt=""> Обо мне</button>
@@ -696,8 +696,8 @@
             <h2>Контакты</h2>
             <div class="cont_nav">
                 <div class="pre_nav_box">
-                    <a href=""><img src="img/icon/mail_cont.svg" alt="Почта">kravchenko-aleksey@yandex.ru</a>
-                    <a href=""><img src="img/icon/loc_cont.svg" alt="Адрес">ул. Цветной бульвар, д.19, с.4, каб. 209</a>
+                    <a href="mail:kravchenko-aleksey@yandex.ru"><img src="img/icon/loc_cont.svg" alt="Почта">kravchenko-aleksey@yandex.ru</a>
+                    <a href="https://yandex.ru/maps/-/CCUWyWc3hB"><img src="img/icon/mail_cont.svg" alt="Адрес">ул. Цветной бульвар, д.19, с.4, каб. 209</a>
                 </div>
                 <div class="soc_nav_box">
                     <a href=""><img src="img/icon/whatsapp.svg" alt="Whatsapp">Whatsapp</a>
@@ -708,8 +708,8 @@
                     <a href=""><img src="img/icon/ok.svg" alt="Одноклассники">Одноклассники</a>
                 </div>
                 <div class="tel_nav_box">
-                    <a href="" class="tel_nav"><img src="img/icon/call_red.svg" alt="Телефон">+7 (926) 342-10-41</a>
-                    <button class="call_btn">Заказать звонок</button>
+                    <a href="tel:+79263421041" class="tel_nav"><img src="img/icon/call_red.svg" alt="Телефон">+7 (926) 342-10-41</a>
+                    <button class="call_btn openModal">Заказать звонок</button>
                 </div>
             </div>
         </div>
@@ -742,16 +742,16 @@
 
                 <div class="sect_links">
                     <div class="sect_flex">
-                        <a href="">Обо мне</a>
-                        <a href="">Новости</a>
-                        <a href="">Методы работы</a>
-                        <a href="">Услуги и цены</a>
+                        <a href="#tab_about">Обо мне</a>
+                        <a href="#news">Новости</a>
+                        <a href="#method">Методы работы</a>
+                        <a href="#price">Услуги и цены</a>
                     </div>
                     <div class="sect_flex">
-                        <a href="">Документы</a>
-                        <a href="">Награды</a>
-                        <a href="">Отзывы</a>
-                        <a href="">Контакты</a>
+                        <a href="#document">Документы</a>
+                        <a href="#awards">Награды</a>
+                        <a href="#reviews">Отзывы</a>
+                        <a href="#contact">Контакты</a>
                     </div>
                 </div>
             </div>
@@ -759,9 +759,9 @@
                 <h4>Контакты</h4>
 
                 <div class="contact_footer">
-                    <a href=""><img src="img/icon/mail_cont.svg" alt="Почта">kravchenko-aleksey@yandex.ru</a>
-                    <a href=""><img src="img/icon/call_cont.svg" alt="Телефон"> +7 (926) 342-10-41</a>
-                    <a href=""><img src="img/icon/loc_cont.svg" alt="Адрес">ул. Цветной бульвар, д.19, с.4, каб. 209</a>
+                    <a href="mail:kravchenko-aleksey@yandex.ru"><img src="img/icon/loc_cont.svg" alt="Почта">kravchenko-aleksey@yandex.ru</a>
+                    <a href="tel:+79263421041"><img src="img/icon/call_cont.svg" alt="Телефон"> +7 (926) 342-10-41</a>
+                    <a href="https://yandex.ru/maps/-/CCUWyWc3hB"><img src="img/icon/mail_cont.svg" alt="Адрес">ул. Цветной бульвар, д.19, с.4, каб. 209</a>
                 </div>
             </div>
             <div class="sections_block">

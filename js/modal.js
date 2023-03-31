@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('#openModal').click(function() {
+    $('.openModal').click(function() {
 
         $('.modal').show();
 

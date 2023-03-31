@@ -24,3 +24,28 @@ $(document).ready(function() {
         $(".tablinks:first").addClass("active");
     });
 });
+
+// Скролл
+
+// выбираем все ссылки на странице
+const links = document.querySelectorAll('a[href^="#"]');
+
+// добавляем обработчик клика на каждую ссылку
+links.forEach(link => {
+    link.addEventListener('click', function(event) {
+        // отменяем стандартное поведение ссылки
+        event.preventDefault();
+
+        // получаем целевой элемент, к которому нужно проскроллить страницу
+        const targetElement = document.querySelector(this.getAttribute('href'));
+
+        // вычисляем расстояние от начала страницы до целевого элемента
+        const targetOffset = targetElement.offsetTop;
+
+        // задаем плавную прокрутку до целевого элемента
+        window.scrollTo({
+            top: targetOffset,
+            behavior: 'smooth'
+        });
+    });
+});
