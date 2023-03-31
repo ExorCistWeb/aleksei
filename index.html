@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алексей Кравченко</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="modal">
+        <div class="modal-content">
+
+            <span class="modal-close"><img src="img/icon/close.svg" alt=""></span>
+            <h1>Заполните форму</h1>
+            <p>Мы свяжемся с вами в ближайшее время</p>
+            <form>
+
+                <input type="text" placeholder="Имя" />
+
+                <input type="text" placeholder="Ваш номер телефона" />
+
+                <label class="modal-checkbox"><input type="checkbox" checked /> <span>Я согласен(-а) с политикой конфиденциальности</span></label>
+
+                <button class="modal-button">Заказать звонок</button>
+
+            </form>
+
+        </div>
+    </div>
+
+
+    <header>
+        <div class="pc_header">
+            <div class="header_links">
+                <a href="#about">Обо мне</a>
+                <a href="">Новости</a>
+                <a href="">Методы работы</a>
+                <a href="">Услуги и цены</a>
+                <a href="">Документы</a>
+                <a href="">Награды</a>
+                <a href="">Отзывы</a>
+                <a href="">Контакты</a>
+            </div>
+            <div class="soc_links">
+                <a href=""><img src="img/icon/whatsapp.svg" alt="Ватсапп"></a>
+                <a href=""><img src="img/icon/telegram.svg" alt="Телеграм"></a>
+                <a href=""><img src="img/icon/vk.svg" alt="ВКонтакте"></a>
+                <a href=""><img src="img/icon/ok.svg" alt="Одноклассники"></a>
+            </div>
+            <button class="call_btn" id="openModal">Заказать звонок</button>
+        </div>
+    </header>
+    <div class="pre_nav">
+        <a href=""><img src="img/icon/loc.svg" alt="Адрес">ул. Цветной бульвар, д.19, с.4, каб. 209</a>
+        <a href=""><img src="img/icon/mail.svg" alt="Почта">kravchenko-aleksey@yandex.ru</a>
+        <a href=""><img src="img/icon/tel.svg" alt="Телефон"> +7 (926) 342-10-41</a>
+    </div>
+
+    <section id="about">
+        <div class="about">
+            <div class="about_content">
+                <h1>Алексей Кравченко: Увидеть возможности, понять скрытые мотивы, изменить ситуацию</h1>
+                <p class="p">Психолог высшей квалификационной категории с 15-летним опытом работы в области специальной психологии.</p>
+                <div class="about_box_abs">
+                    <div class="about_box_qest">
+                        <div class="about_box_qest_title">
+                            <h3>Получите профессиональные опросники</h3>
+                            <span class="free">Бесплатно</span>
+                        </div>
+                        <p>Для самостоятельного исследования уровня тревожности, депрессии и нейротизма. Результаты пригодятся на первой консультации, а также для отслеживания динамики состояния в процессе работы.</p>
+                        <a href="" class="down_pdf_btn"><img src="img/icon/doc.svg" alt="Получить PDF">Получить PDF</a>
+                    </div>
+                </div>
+                <a href="" class="green_btn">
+                    <div class="green_btn_cont">
+                        <h2>Услуги для детей и подростков</h2>
+                        <p>Спецпроект для родителей</p>
+                    </div>
+                    <img src="img/icon/arrow-right.svg" alt="Стрелка">
+                </a>
+            </div>
+            <img class="about_img" src="img/about.jpg" alt="Обо мне">
+        </div>
+        <div class="about_box_content">
+            <div class="about_box">
+                <span class="blue_h1">3100+</span>
+                <p>клиентов, довольных<br> достигнутым результатом</p>
+            </div>
+            <div class="about_box">
+                <span class="blue_h1">9628</span>
+                <p>Академических часов<br> профессиональной подготовки</p>
+            </div>
+            <div class="about_box">
+                <span class="blue_h1">15+</span>
+                <p>Лет опыта<br> работы</p>
+            </div>
+            <div class="about_box">
+                <span class="blue_h1">100%</span>
+                <p>Анонимность<br>обращения</p>
+            </div>
+        </div>
+    </section>
+    <section id="news">
+        <div class="news">
+            <div class="title">
+                <h2>Новости</h2>
+            </div>
+            <div style="--swiper-navigation-color: #000;" class="swiper mySwiper">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide news_swiper">
+                        <img src="img/news_1.jpg" alt="">
+
+                        <div class="news_content">
+                            <div class="data">15.04.2023</div>
+                            <h2>График работы<br>в праздничные дни</h2>
+                            <p>1, 9 мая – шашлыки, общение с друзьями и подзарядка. <br> В остальные дниприем идет по стандартному расписанию <br> с утра и до позднего вечера </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide  news_swiper">
+                        <img src="img/news_1.jpg" alt="">
+
+                        <div class="news_content">
+                            <div class="data">15.04.2023</div>
+                            <h2>График работы<br>в праздничные дни</h2>
+                            <p>1, 9 мая – ши и подзарядка. <br> В остальные дниприем идет по стандартному расписанию <br> с утра и до позднего вечера </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide  news_swiper">
+                        <img src="img/news_1.jpg" alt="">
+
+                        <div class="news_content">
+                            <div class="data">15.04.2023</div>
+                            <h2>График работы<br>в праздничные дни</h2>
+                            <p>1, 9 мая – шашлыки, общение с друзьями и подзарядка. <br> В остальные дниприемрасписанию <br> с утра и до позднего вечера </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper_btn">
+
+
+                    <div class="swiper-button-prev"><svg class="news_svg news_svg_prev" width="19" height="16" viewBox="0 0 19 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.2929 13.7929C9.9024 14.1834 9.9024 14.8166 10.2929 15.2071C10.6834 15.5976 11.3166 15.5976 11.7071 15.2071L17.5 9.4142C18.281 8.6332 18.281 7.3668 17.5 6.5858L11.7071 0.79289C11.3166 0.40237 10.6834 0.40237 10.2929 0.79289C9.9024 1.18342 9.9024 1.81658 10.2929 2.20711L15.0858 7H1C0.44772 7 0 7.4477 0 8C0 8.5523 0.44772 9 1 9H15.0858L10.2929 13.7929Z" fill="#F7FBFA"/>
+                            </svg></div>
+                    <div class="swiper-button-next"><svg class="news_svg" width="19" height="16" viewBox="0 0 19 16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.2929 13.7929C9.9024 14.1834 9.9024 14.8166 10.2929 15.2071C10.6834 15.5976 11.3166 15.5976 11.7071 15.2071L17.5 9.4142C18.281 8.6332 18.281 7.3668 17.5 6.5858L11.7071 0.79289C11.3166 0.40237 10.6834 0.40237 10.2929 0.79289C9.9024 1.18342 9.9024 1.81658 10.2929 2.20711L15.0858 7H1C0.44772 7 0 7.4477 0 8C0 8.5523 0.44772 9 1 9H15.0858L10.2929 13.7929Z" fill="#F7FBFA"/>
+                                </svg></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tab_about">
+        <div class="tabs_about">
+            <div class="tab">
+                <button class="tablinks active" onclick="openTab(event, 'Tab1')"><img src="img/icon/doctor.svg" alt=""> Обо мне</button>
+                <button class="tablinks" onclick="openTab(event, 'Tab2')"><img src="img/icon/traced.svg" alt=""> Образование</button>
+                <button class="tablinks" onclick="openTab(event, 'Tab3')"><img src="img/icon/certificate.svg" alt=""> Профессиональная компетентность</button>
+            </div>
+
+            <div id="Tab1" class="tabcontent">
+                <div class="tab_flex">
+                    <img src="img/about_tab1.jpg" alt="Обо мне">
+                    <div class="tab_content">
+                        <h5>Дорогие друзья! Приветствую вас. Меня зовут Алексей Александрович. </h5>
+                        <p>
+                            <b>Я клинический психолог.</b> Женат. Есть замечательный сынок. Раз вы попали на эту страницу, вероятно, есть вопросы или жизненные ситуации, которые сильно тревожат. <br><br> Я очень рад, что вы задумались о посещении специалиста
+                            моего профиля, так как открыто обсудить проблему означает сделать реальный, подчеркну, реальный шаг к ее решению.<br><br>
+                            <b>Со мной можно говорить обо всем.</b> Как есть. Без стеснения. О любви, здоровье, сексе, деньгах, фантазиях, страхах, обидах. Вообще о любых чувствах и переживаниях. <br><br>
+                            <b>Трудно говорить?</b><br><br> Всё нормально. Я сам задам ключевые вопросы и даже предложу пройти интересные психологические исследования. Исходя из всего объема информации, которая станет доступна на моих консультациях, вы
+                            сами примете верные решения и сделаете конкретные шаги для их осуществления.<br><br>
+                            <b>Я стараюсь воздерживаться от советов</b>, но, если потребуется мое профессиональное мнение, вы его тоже услышите. Выбор в любом случае останется за вами. Психолог – это просто и приятно. Это классно. Попробуйте! Наберитесь
+                            смелости и позвоните.<br><br> Ниже вы сможете найти подробную информацию о моем образовании, наградах, опыте работы, используемых методах и профессиональных навыках. Если у вас есть вопросы, связанные с детьми или подростками,
+                            то рекомендую познакомиться с описанием услуг на специальной странице для родителей, на которую можно попасть, кликнув по <a href="">этой ссылке</a>.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Tab2" class="tabcontent">
+                <div class="tab_flex">
+                    <img src="img/about_tab1.jpg" alt="Обо мне">
+                    <div class="tab_content">
+                        <h5>Дорогие друзья! Приветствую вас. Меня зовут Алексей Александрович. </h5>
+                        <p>
+                            <b>Я клинический психолог.</b> Женат. Есть замечательный сынок. Раз вы попали на эту страницу, вероятно, есть вопросы или жизненные ситуации, которые сильно тревожат. <br><br> Я очень рад, что вы задумались о посещении специалиста
+                            моего нормально. Я сам задам ключевые вопросы и даже предложу пройти интересные психологические исследования. Исходя из всего объема информации, которая станет доступна на моих консультациях, вы сами примете верные решения
+                            и сделаете конкретные шаги для их осуществления.<br><br>
+                            <b>Я стараюсь воздерживаться от советов</b>, но, если потребуется мое профессиональное мнение, вы его тоже услышите. Выбор в любом случае останется за вами. Психолог – это просто и приятно. Это классно. Попробуйте! Наберитесь
+                            смелости и позвоните.<br><br> Ниже вы сможете найти подробную информацию о моем образовании, наградах, опыте работы, используемых методах и профессиональных навыках. Если у вас есть вопросы, связанные с детьми или подростками,
+                            то рекомендую познакомиться с описанием услуг на специальной странице для родителей, на которую можно попасть, кликнув по <a href="">этой ссылке</a>.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Tab3" class="tabcontent">
+                <div class="tab_flex">
+                    <img src="img/about_tab1.jpg" alt="Обо мне">
+                    <div class="tab_content">
+                        <h5>Дорогие друзья! Приветствую вас. Меня зовут Алексей Александрович. </h5>
+                        <p>
+                            <b>Я клинический психолог.</b> Женат. Есть замечательный сынок. Раз вы попали на эту страницу, вероятно, есть вопросы или жизненные ситуации, которые сильно тревожат. <br><br> Я очень рад, что вы задумались о посещении специалиста
+                            моего профиля, так как открыетные шаги для их осуществления.<br><br>
+                            <b>Я стараюсь воздерживаться от советов</b>, но, если потребуется мое профессиональное мнение, вы его тоже услышите. Выбор в любом случае останется за вами. Психолог – это просто и приятно. Это классно. Попробуйте! Наберитесь
+                            смелости и позвоните.<br><br> Ниже вы сможете найти подробную информацию о моем образовании, наградах, опыте работы, используемых методах и профессиональных навыках. Если у вас есть вопросы, связанные с детьми или подростками,
+                            то рекомендую познакомиться с описанием услуг на специальной странице для родителей, на которую можно попасть, кликнув по <a href="">этой ссылке</a>.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="consult">
+        <div class="consult">
+            <h2>Уже на первой консультации<br> вы получаете: </h2>
+            <div class="consult_content">
+
+                <div class="consult_flex">
+                    <div class="consult_box">
+                        <img src="img/icon/consult_1.svg" alt="">
+                        <h3>Анализ ситуации</h3>
+                        <p>С предварительной гипотезой и<br> конкретными рекомендациями.</p>
+                    </div>
+                    <div class="consult_box">
+                        <img src="img/icon/consult_2.svg" alt="">
+                        <h3>План работы</h3>
+                        <p>Пошаговый план работы, когда<br> достижение запроса требует времени.</p>
+                    </div>
+                    <div class="consult_box">
+                        <img src="img/icon/consult_3.svg" alt="">
+                        <h3>Примерные сроки и прогноз</h3>
+                        <p>По дальнейшему развитию <br>ситуации.</p>
+                    </div>
+                </div>
+                <div class="consult_flex">
+                    <div class="consult_box">
+                        <img src="img/icon/consult_4.svg" alt="">
+                        <h3>Внимание и забота</h3>
+                        <p>Психологическая поддержка <br>на каждом этапе.</p>
+                    </div>
+                    <div class="consult_box">
+                        <img src="img/icon/consult_5.svg" alt="">
+                        <h3>Понимание</h3>
+                        <p>Скрытых механизмов <br>и мотивов.</p>
+                    </div>
+                    <div class="consult_box green_box">
+                        <img src="img/icon/consult_6.svg" alt="">
+                        <h3>Комплексная диагностика</h3>
+                        <p>Возможность пройти комплексное<br> психологическое исследование<br> с подробным обсуждением<br> результатов на последующих <br>визитах.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="method">
+        <div class="method">
+            <div class="method_content">
+                <h2>Методы работы</h2>
+                <p>
+                    В работе используются инструменты психодинамического и гуманистического направления, приемы когнитивно-поведенческой психотерапии и системной семейной психологии.<br><br> Все методы имеют научно доказанную эффективность<br> и приносят
+                    отличные результаты, когда дополняют друг друга. <br><br> Такой мультимодальный подход может быть краткосрочным (1–10 консультаций) и долгосрочным <br> (до 3 лет). В его основе лежат знания о том, как устроена психика, личность, мышление,
+                    эмоции, поведение, нервная система и головной мозг человека.<br><br> Узнать подробнее о том, как ведется работа, можно <br> по телефону, электронной почте, в мессенджерах<br> и социальных сетях. Всегда рады вашим вопросам.
+
+                </p>
+            </div>
+            <img class="method_img" src="img/method.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="result">
+        <div class="result">
+            <h2>Каждому важна результативность, поэтому я внимательно слежу за тем, чтобы: </h2>
+            <div class="result_flex">
+                <div class="result_box">
+                    <img src="img/icon/result_1.svg" alt="">
+                    <p>Вы ощущали полную безопасность, расслабленность при выражении своих чувств, мыслей, желаний. </p>
+                </div>
+                <div class="result_box">
+                    <img src="img/icon/result_2.svg" alt="">
+                    <p>Практиковались методы, научно доказавшие свою эффективность.</p>
+                </div>
+                <div class="result_box">
+                    <img src="img/icon/result_3.svg" alt="">
+                    <p>Соблюдались этические нормы и применялись рекомендованные профессиональные алгоритмы.</p>
+                </div>
+                <div class="result_box">
+                    <img src="img/icon/result_4.svg" alt="">
+                    <p>С помощью психодиагностических исследований оценивались промежуточные и конечные результаты консультирования.</p>
+                </div>
+                <div class="result_box">
+                    <img src="img/icon/result_5.svg" alt="">
+                    <p>Вы чувствовали, что вас поддерживают, помогают расслабиться и открыться.</p>
+                </div>
+                <div class="result_box">
+                    <img src="img/icon/result_6.svg" alt="">
+                    <p>В итоге остались довольны достигнутыми результатами.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="helping">
+        <div class="helping">
+            <h2>Вы всегда можете рассчитывать<br> на помощь, если имеются: </h2>
+            <div class="helping_flex">
+                <div class="helping_box">
+                    <p>Тяжелые психоэмоциональные состояния;</p>
+                    <p>Конфликты в семье и предразводная ситуация;</p>
+                    <p>Проблемы у детей и подростков с учебой или поведением;</p>
+                    <p>Снижение доходов на фоне ухудшения<br> психологического состояния;</p>
+                    <p>Сексуальная неудовлетворенность;</p>
+                    <p>Чрезмерная чувствительность, сниженное настроение и работоспособность;</p>
+                    <p>Трудности в общении с людьми: противоположным полом, коллегами, родственниками, друзьями;</p>
+                </div>
+                <div class="helping_box">
+                    <p>Внутренние блоки, мешающие достижению целей;</p>
+                    <p>Обиды, страхи, фобии, высокий уровень тревоги;</p>
+                    <p>Агрессивность и деструктивные формы поведения, в т. ч. алкоголизм, наркомания, самоагрессия;</p>
+                    <p>Нарушения мышления, спутанность мыслей;</p>
+                    <p>Навязчивости и зависимости;</p>
+                    <p>Ярко выраженные личностные особенности, трудности характера, мешающие жить;</p>
+                    <p>телесные зажимы и психосоматика.</p>
+                </div>
+            </div>
+        </div>
+        <div class="faq">
+            <span class="faq_span">часто задаваемые вопросы</span>
+            <div class="faq_title">
+                <h2>Семь самых популярных<br> вопросов клиентов </h2>
+                <span class="warning">Если вы не нашли ответ на интересующий вопрос, свяжитесь, пожалуйста, со мной в удобном для вас мессенджере.</span>
+            </div>
+            <div class="accordion-container">
+                <div class="ac">
+                    <h2 class="ac-header">
+                        <button type="button" class="ac-trigger"><span class="num_faq">01.</span> Как проходит первичная консультация?</button>
+                    </h2>
+                    <div class="ac-panel">
+                        <p>
+                            Первичная встреча длится 1 час 20 минут и может проходить как в очном формате, так и удаленно. Личный прием проходит в уютном кабинете в центре Москвы на Цветном бульваре. Можно с уверенностью утверждать, что работа в кабинете проходит комфортнее и дает
+                            результаты быстрее, чем консультирование по телефону или в мессенджере.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ac">
+                    <h2 class="ac-header">
+                        <button type="button" class="ac-trigger"><span class="num_faq">02.</span>Сколько понадобится посещений для<br> полного решения возникших проблем?</button>
+                    </h2>
+                    <div class="ac-panel">
+                        <p>
+                            Первичная
+                        </p>
+                    </div>
+                </div>
+                <div class="ac">
+                    <h2 class="ac-header">
+                        <button type="button" class="ac-trigger"><span class="num_faq">03.</span>Можно ли оформить вызов на дом и<br> получить письменное заключение?
+                        </button>
+                    </h2>
+                    <div class="ac-panel">
+                        <p>
+                            Первичная
+                        </p>
+                    </div>
+                </div>
+                <div class="ac">
+                    <h2 class="ac-header">
+                        <button type="button" class="ac-trigger"><span class="num_faq">04.</span>В рамках какой научной школы или направления<br> работает Алексей Александрович?
+                        </button>
+                    </h2>
+                    <div class="ac-panel">
+                        <p>
+                            Первичная
+                        </p>
+                    </div>
+                </div>
+                <div class="ac">
+                    <h2 class="ac-header">
+                        <button type="button" class="ac-trigger"><span class="num_faq">05.</span>Что значит клинический психолог? Чем он отличается от <br>классического психолога, врача-психиатра и психотерапевта?</button>
+                    </h2>
+                    <div class="ac-panel">
+                        <p>
+                            Первичная
+                        </p>
+                    </div>
+                </div>
+                <div class="ac">
+                    <h2 class="ac-header">
+                        <button type="button" class="ac-trigger"><span class="num_faq">06.</span>Возможно ли получить консультацию удаленно через Zoom,<br> Telegram, Skype, WhatsApp или другой мессенджер?
+                        </button>
+                    </h2>
+                    <div class="ac-panel">
+                        <p>
+                            Первичная
+                        </p>
+                    </div>
+                </div>
+                <div class="ac">
+                    <h2 class="ac-header">
+                        <button type="button" class="ac-trigger"><span class="num_faq">07.</span>Насколько анонимно ведется прием и может ли информация передаваться<br> другим людям, например сотрудникам государственных служб?
+                        </button>
+                    </h2>
+                    <div class="ac-panel">
+                        <p>
+                            Первичная
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="price">
+        <div class="price">
+            <div class="price_title">
+                <span class="faq_span">Индивидуальные и семейные консультации</span>
+                <h2>Услуги и цены</h2>
+            </div>
+
+            <div class="price_flex">
+                <div class="price_box">
+                    <h6>Индивидуальная консультация</h6>
+
+                    <p>Длительность</p>
+                    <h4>1 час 20 минут</h4>
+                    <p>Стоимость</p>
+                    <h4>5 000 ₽</h4>
+                </div>
+                <div class="price_box">
+                    <h6>Семейная консультация</h6>
+
+                    <p>Длительность</p>
+                    <h4>1 час 20 минут</h4>
+                    <p>Стоимость</p>
+                    <h4>5 000 ₽</h4>
+                </div>
+            </div>
+            <div class="price_flex">
+                <div class="price_box">
+                    <h6>Абонемент<br> <span>5</span><br> консультаций</h6>
+
+                    <p>Длительность</p>
+                    <h4>1 час 20 минут</h4>
+                    <p>Стоимость</p>
+                    <h4>23 750 ₽</h4>
+
+                    <p>Специальное предложение </p>
+                    <h4 class="green">Скидка 5%</h4>
+
+                    <p>Ваша экономия</p>
+                    <h4 class="green">1 250 ₽ </h4>
+                </div>
+                <div class="price_box">
+                    <h6>Абонемент<br> <span>10</span><br> консультаций</h6>
+
+                    <p>Длительность</p>
+                    <h4>1 час 20 минут</h4>
+                    <p>Стоимость</p>
+                    <h4>45 000 ₽</h4>
+
+                    <p>Специальное предложение </p>
+                    <h4 class="green">Скидка 10%</h4>
+
+                    <p>Ваша экономия</p>
+                    <h4 class="green">5 000 ₽ </h4>
+                </div>
+                <div class="price_box">
+                    <h6>Абонемент<br> <span>15</span><br> консультаций</h6>
+                    <p>Длительность</p>
+                    <h4>1 час 20 минут</h4>
+                    <p>Стоимость</p>
+                    <h4>63 750 ₽</h4>
+
+                    <p>Специальное предложение </p>
+                    <h4 class="green">Скидка 15%</h4>
+
+                    <p>Ваша экономия</p>
+                    <h4 class="green">11 250 ₽ </h4>
+                </div>
+            </div>
+            <a href="" class="green_btn green_btn_two">
+                <div class="green_btn_cont">
+                    <h2>Услуги смежных специалистов<br> для детей и подростков:</h2>
+                    <p>Логопедов, дефектологов, нейропсихологов, арт-терапевтов.</p>
+                </div>
+                <img src="img/icon/arrow-right.svg" alt="Стрелка">
+            </a>
+
+            <div class="price_title">
+
+                <h2>Вызов психолога на дом</h2>
+            </div>
+
+            <div class="price_flex price_flex_two">
+                <div class="price_box">
+                    <h6>Выезд в пределах МКАД</h6>
+
+                    <p>Длительность</p>
+                    <h4>1 час 20 минут</h4>
+                    <p>Стоимость</p>
+                    <h4>10 000 ₽</h4>
+                </div>
+                <div class="price_box">
+                    <h6>Выезд за МКАД</h6>
+
+                    <p>Длительность</p>
+                    <h4>1 час 20 минут</h4>
+                    <p>Стоимость</p>
+                    <h4><span>От</span> 12 000 ₽</h4>
+                </div>
+                <div class="price_box">
+                    <h6>Психологическая диагностика </h6>
+                    <span class="price_p">Выезд для проведения на дому
+                        психологической диагностики
+                        с официальным заключением</span>
+                    <p>Длительность</p>
+                    <h4>1 час 20 минут</h4>
+                    <p>Стоимость</p>
+                    <h4>Обсуждается лично</h4>
+                </div>
+            </div>
+
+            <div class="price_title price_title_two">
+                <h2>Психологическая диагностика<br> с официальным заключением</h2>
+                <p>В стоимость входит первичная беседа, психологическая диагностика,<br> заключение на официальном бланке с печатью и подписью специалиста. </p>
+            </div>
+            <div class="price_flex">
+                <div class="price_box price_box_two">
+                    <h6>Патопсихологическая диагностика </h6>
+                    <p class="price_p">по запросу врача-психиатра или невролога для уточнения диагноза<br> <a href="">Посмотреть пример</a> </p>
+
+                    <div class="bottom_cont">
+                        <p>Стоимость</p>
+                        <h4>10 000 ₽</h4>
+                    </div>
+                </div>
+                <div class="price_box price_box_two">
+                    <h6>Нейропсихологическая диагностика </h6>
+                    <p class="price_p"><a href="">Посмотреть пример</a> </p>
+
+                    <div class="bottom_cont">
+                        <p>Стоимость</p>
+                        <h4>10 000 ₽</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="price_flex">
+                <div class="price_box price_box_two">
+                    <h6>Заключение психолога для суда </h6>
+                    <p class="price_p">
+                        – исследование психологических характеристик семьи, особенностей детско-родительских отношений;<br><br> – диагностика личности, состояния интеллекта и когнитивных функций ребенка и взрослого;<br><br> – изучение психоэмоционального
+                        состояния испытуемого после определенных событий, происшествия, травмы.<br><br>
+                    </p>
+
+                    <div class="bottom_cont">
+                        <p>Стоимость</p>
+                        <h4>20 000 ₽</h4>
+                    </div>
+                </div>
+                <div class="price_flex price_flex_dic">
+                    <div class="price_box price_box_two">
+                        <h6>Изучение уровня и<br> структуры интеллекта</h6>
+                        <p class="price_p"><a href="">Тест Векслера - посмотреть пример</a> </p>
+
+                        <div class="bottom_cont">
+                            <p>Стоимость</p>
+                            <h4>10 000 ₽</h4>
+                        </div>
+                    </div>
+                    <div class="price_box price_box_two">
+                        <h6>Диагностика личности и эмоционально-волевой сферы</h6>
+
+                        <div class="bottom_cont">
+                            <p>Стоимость</p>
+                            <h4>10 000 ₽</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="price_flex">
+                <div class="price_box price_box_two">
+                    <h6>Заключение психолога</h6>
+                    <p class="price_p">для прохождения медико-социальной <br> и военно-врачебной экспертизы<br> <a href="">Посмотреть пример</a> </p>
+
+                    <div class="bottom_cont">
+                        <p>Стоимость</p>
+                        <h4>12 000 ₽</h4>
+                    </div>
+                </div>
+                <div class="price_box price_box_two">
+                    <h6>Тестирование сотрудников</h6>
+                    <p class="price_p price_p_mb15">для решения кадровых вопросов, на соответствие предполагаемой/занимаемой должности,<br> профориентационных целей</p>
+
+                    <div class="bottom_cont">
+                        <p>Стоимость</p>
+                        <h4>12 000 ₽</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="bacgr">
+        <section id="document">
+
+            <div class="swiper myDocument">
+                <div class="document_title">
+                    <h2>Документы</h2>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/doc/1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/doc/2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/doc/3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/doc/1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/doc/2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/doc/3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/doc/1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/doc/2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/doc/3.png" alt=""></div>
+                </div>
+                <div class="swiper_btn swiper_btn_two">
+
+
+                    <div class="swiper-button-prev"><svg class="news_svg news_svg_prev" width="19" height="16" viewBox="0 0 19 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.2929 13.7929C9.9024 14.1834 9.9024 14.8166 10.2929 15.2071C10.6834 15.5976 11.3166 15.5976 11.7071 15.2071L17.5 9.4142C18.281 8.6332 18.281 7.3668 17.5 6.5858L11.7071 0.79289C11.3166 0.40237 10.6834 0.40237 10.2929 0.79289C9.9024 1.18342 9.9024 1.81658 10.2929 2.20711L15.0858 7H1C0.44772 7 0 7.4477 0 8C0 8.5523 0.44772 9 1 9H15.0858L10.2929 13.7929Z" fill="#F7FBFA"/>
+                            </svg></div>
+                    <div class="swiper-button-next"><svg class="news_svg" width="19" height="16" viewBox="0 0 19 16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.2929 13.7929C9.9024 14.1834 9.9024 14.8166 10.2929 15.2071C10.6834 15.5976 11.3166 15.5976 11.7071 15.2071L17.5 9.4142C18.281 8.6332 18.281 7.3668 17.5 6.5858L11.7071 0.79289C11.3166 0.40237 10.6834 0.40237 10.2929 0.79289C9.9024 1.18342 9.9024 1.81658 10.2929 2.20711L15.0858 7H1C0.44772 7 0 7.4477 0 8C0 8.5523 0.44772 9 1 9H15.0858L10.2929 13.7929Z" fill="#F7FBFA"/>
+                                </svg></div>
+
+                </div>
+            </div>
+        </section>
+        <section id="awards">
+
+            <div class="swiper myDocument">
+                <div class="document_title">
+                    <h2>Награды</h2>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/awards/1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/awards/2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/awards/3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/awards/1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/awards/2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/awards/3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/awards/1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/awards/2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/awards/3.png" alt=""></div>
+                </div>
+                <div class="swiper_btn swiper_btn_two">
+
+
+                    <div class="swiper-button-prev"><svg class="news_svg news_svg_prev" width="19" height="16" viewBox="0 0 19 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.2929 13.7929C9.9024 14.1834 9.9024 14.8166 10.2929 15.2071C10.6834 15.5976 11.3166 15.5976 11.7071 15.2071L17.5 9.4142C18.281 8.6332 18.281 7.3668 17.5 6.5858L11.7071 0.79289C11.3166 0.40237 10.6834 0.40237 10.2929 0.79289C9.9024 1.18342 9.9024 1.81658 10.2929 2.20711L15.0858 7H1C0.44772 7 0 7.4477 0 8C0 8.5523 0.44772 9 1 9H15.0858L10.2929 13.7929Z" fill="#F7FBFA"/>
+                            </svg></div>
+                    <div class="swiper-button-next"><svg class="news_svg" width="19" height="16" viewBox="0 0 19 16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.2929 13.7929C9.9024 14.1834 9.9024 14.8166 10.2929 15.2071C10.6834 15.5976 11.3166 15.5976 11.7071 15.2071L17.5 9.4142C18.281 8.6332 18.281 7.3668 17.5 6.5858L11.7071 0.79289C11.3166 0.40237 10.6834 0.40237 10.2929 0.79289C9.9024 1.18342 9.9024 1.81658 10.2929 2.20711L15.0858 7H1C0.44772 7 0 7.4477 0 8C0 8.5523 0.44772 9 1 9H15.0858L10.2929 13.7929Z" fill="#F7FBFA"/>
+                                </svg></div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <section id="reviews">
+        <div class="reviews">
+            <div class="reviews_title">
+                <h2>Отзывы</h2>
+
+                <span class="warning">Для просмотра отзывов специалиста кликните на логотип сервиса.</span>
+            </div>
+            <div class="reviews_flex">
+                <a href=""><img src="img/reviews_1.png" alt="СБЕР Здоровье"></a>
+                <a href=""><img src="img/reviews_2.png" alt="b17.ru"></a>
+                <a href=""><img src="img/reviews_3.png" alt="profi.ru"></a>
+            </div>
+        </div>
+
+    </section>
+    <section id="contact">
+        <div class="contact">
+            <h2>Контакты</h2>
+            <div class="cont_nav">
+                <div class="pre_nav_box">
+                    <a href=""><img src="img/icon/mail_cont.svg" alt="Почта">kravchenko-aleksey@yandex.ru</a>
+                    <a href=""><img src="img/icon/loc_cont.svg" alt="Адрес">ул. Цветной бульвар, д.19, с.4, каб. 209</a>
+                </div>
+                <div class="soc_nav_box">
+                    <a href=""><img src="img/icon/whatsapp.svg" alt="Whatsapp">Whatsapp</a>
+                    <a href=""><img src="img/icon/telegram.svg" alt="Telegram">Telegram</a>
+                </div>
+                <div class="soc_nav_box">
+                    <a href=""><img src="img/icon/vk.svg" alt="Вконтакте">Вконтакте</a>
+                    <a href=""><img src="img/icon/ok.svg" alt="Одноклассники">Одноклассники</a>
+                </div>
+                <div class="tel_nav_box">
+                    <a href="" class="tel_nav"><img src="img/icon/call_red.svg" alt="Телефон">+7 (926) 342-10-41</a>
+                    <button class="call_btn">Заказать звонок</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="map">
+        <div class="map">
+            <div style="position:relative;overflow:hidden;">
+                <iframe src="https://yandex.ru/map-widget/v1/?azimuth=2.742087600398404&ll=37.618977%2C55.771783&mode=search&sctx=ZAAAAAgCEAAaKAoSCQ9fJoqQNldAERnG3SBaAUxAEhIJTl5kAn6N3z8RW7G%2F7J48xD8iBgABAgMEBSgKOABA3K0HSAFiIGFkZF9zbmlwcGV0PXBob3RvX2VtYmVkZGluZ3MvMi54YiNyZW1vdmVfc25pcHBldD1waG90b19lbWJlZGRpbmdzLzEueGIpY29sbGVjdGlvbnNfcmFua2luZ19tb2RlbD1jb2xsX3JlbF9hc3Nlc3NiJWNvbGxlY3Rpb25zX3JlbGV2X3RocmVzaG9sZD0xMDA2MDAwMDBiIGNvbGxlY3Rpb25zX3JldHVybl9ieV9nZW9pZD10cnVlYjlyZWFycj1zY2hlbWVfTG9jYWwvR2VvL0NvbGxlY3Rpb25zL01peEVhY2hOUG9zaXRpb249MTAwMDBiN3JlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vQ29sbGVjdGlvbnMvRmlyc3RQb3NpdGlvblRvTWl4PTNiMnJlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vQ29sbGVjdGlvbnMvRW5hYmxlZE1peD10cnVlagJydZ0BzcxMPaABAKgBAL0BERb6RcIBFMTwrLpproy56QOX%2FKK4Bt7j64AE6gEA8gEA%2BAEAggJK0LzQvtGB0LrQstCwINGD0LsuINCm0LLQtdGC0L3QvtC5INCx0YPQu9GM0LLQsNGALCDQtC4xOSwg0YEuNCwg0LrQsNCxLiAyMDmKAgCSAgMyMTOaAgxkZXNrdG9wLW1hcHM%3D&sll=37.618977%2C55.771783&sspn=0.001926%2C0.000621&text=%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%20%D1%83%D0%BB.%20%D0%A6%D0%B2%D0%B5%D1%82%D0%BD%D0%BE%D0%B9%20%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80%2C%20%D0%B4.19%2C%20%D1%81.4%2C%20%D0%BA%D0%B0%D0%B1.%20209&tilt=0.8726646259971648&whatshere%5Bpoint%5D=37.619257%2C55.771783&whatshere%5Bzoom%5D=17&z=20"
+                    allowfullscreen="true" style="position:relative;">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+        <div class="info_block">
+            <h2>Алексей Кравченко</h2>
+            <h5>Психолог высшей<br> квалификационной категории</h5>
+
+            <p>Наши партнеры: </p>
+            <div class="info_link_flex">
+                <a href="psycabinet.ru">psycabinet.ru</a>
+                <a href="музейпсихологии.рф">музейпсихологии.рф</a>
+            </div>
+            <a class="polit" href="">Политика конфинденциальности</a>
+        </div>
+        <div class="footer">
+            <div class="sections_block">
+                <h4>разделы</h4>
+
+                <div class="sect_links">
+                    <div class="sect_flex">
+                        <a href="">Обо мне</a>
+                        <a href="">Новости</a>
+                        <a href="">Методы работы</a>
+                        <a href="">Услуги и цены</a>
+                    </div>
+                    <div class="sect_flex">
+                        <a href="">Документы</a>
+                        <a href="">Награды</a>
+                        <a href="">Отзывы</a>
+                        <a href="">Контакты</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sections_block sections_block2">
+                <h4>Контакты</h4>
+
+                <div class="contact_footer">
+                    <a href=""><img src="img/icon/mail_cont.svg" alt="Почта">kravchenko-aleksey@yandex.ru</a>
+                    <a href=""><img src="img/icon/call_cont.svg" alt="Телефон"> +7 (926) 342-10-41</a>
+                    <a href=""><img src="img/icon/loc_cont.svg" alt="Адрес">ул. Цветной бульвар, д.19, с.4, каб. 209</a>
+                </div>
+            </div>
+            <div class="sections_block">
+                <h4>Соц.сети</h4>
+
+                <div class="contact_footer">
+                    <a href=""><img src="img/icon/whatsapp.svg" alt="Whatsapp">Whatsapp</a>
+                    <a href=""><img src="img/icon/telegram.svg" alt="Telegram">Telegram</a>
+                    <a href=""><img src="img/icon/vk.svg" alt="Вконтакте">Вконтакте</a>
+                    <a href=""><img src="img/icon/ok.svg" alt="Одноклассники">Одноклассники</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+
+</html>
