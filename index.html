@@ -15,7 +15,12 @@
 </head>
 
 <body>
-
+    <div id="modal_img" class="modal_img">
+        <div class="modal-content_img">
+            <span class="close_img" onclick="closeModal()">&times;</span>
+            <img id="modal_img_content" src="" alt="">
+        </div>
+    </div>
     <div class="modal">
         <div class="modal-content">
 
@@ -37,7 +42,6 @@
         </div>
     </div>
 
-
     <header>
         <div class="pc_header">
             <div class="header_links">
@@ -51,10 +55,10 @@
                 <a href="#contact">Контакты</a>
             </div>
             <div class="soc_links">
-                <a href=""><img src="img/icon/whatsapp.svg" alt="Ватсапп"></a>
-                <a href=""><img src="img/icon/telegram.svg" alt="Телеграм"></a>
-                <a href=""><img src="img/icon/vk.svg" alt="ВКонтакте"></a>
-                <a href=""><img src="img/icon/ok.svg" alt="Одноклассники"></a>
+                <a href="https://wa.me/79263421041"><img src="img/icon/whatsapp.svg" alt="Ватсапп"></a>
+                <a href="https://t.me/+79263421041"><img src="img/icon/telegram.svg" alt="Телеграм"></a>
+                <a href="https://vk.com/akravchenkoru"><img src="img/icon/vk.svg" alt="ВКонтакте"></a>
+                <a href="https://ok.ru/profile/579553265930"><img src="img/icon/ok.svg" alt="Одноклассники"></a>
             </div>
             <button class="call_btn openModal">Заказать звонок</button>
         </div>
@@ -80,7 +84,7 @@
                         <a href="" class="down_pdf_btn"><img src="img/icon/doc.svg" alt="Получить PDF">Получить PDF</a>
                     </div>
                 </div>
-                <a href="" class="green_btn">
+                <a href="https://psycabinet.ru/" class="green_btn">
                     <div class="green_btn_cont">
                         <h2>Услуги для детей и подростков</h2>
                         <p>Спецпроект для родителей</p>
@@ -491,7 +495,7 @@
                     <h4 class="green">11 250 ₽ </h4>
                 </div>
             </div>
-            <a href="" class="green_btn green_btn_two">
+            <a href="https://psycabinet.ru/" class="green_btn green_btn_two">
                 <div class="green_btn_cont">
                     <h2>Услуги смежных специалистов<br> для детей и подростков:</h2>
                     <p>Логопедов, дефектологов, нейропсихологов, арт-терапевтов.</p>
@@ -622,16 +626,19 @@
                     <h2>Документы</h2>
                 </div>
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="img/doc/1.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/doc/2.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/doc/3.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/doc/1.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/doc/2.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/doc/3.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/doc/1.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/doc/2.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/doc/3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/doc/1.png" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/2.png" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/3.png" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/1.png" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/2.png" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/3.png" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/1.png" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/2.png" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/3.png" alt="" onclick="openModal(this.src)"></div>
                 </div>
+
+
+
                 <div class="swiper_btn swiper_btn_two">
 
 
@@ -652,15 +659,15 @@
                     <h2>Награды</h2>
                 </div>
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="img/awards/1.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/awards/2.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/awards/3.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/awards/1.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/awards/2.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/awards/3.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/awards/1.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/awards/2.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/awards/3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/awards/2.png" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/3.png" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/1.png" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/1.png" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/2.png" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/3.png" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/1.png" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/2.png" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/3.png" alt="" onclick="openModal(this.src)"></div>
                 </div>
                 <div class="swiper_btn swiper_btn_two">
 
@@ -684,9 +691,9 @@
                 <span class="warning">Для просмотра отзывов специалиста кликните на логотип сервиса.</span>
             </div>
             <div class="reviews_flex">
-                <a href=""><img src="img/reviews_1.png" alt="СБЕР Здоровье"></a>
-                <a href=""><img src="img/reviews_2.png" alt="b17.ru"></a>
-                <a href=""><img src="img/reviews_3.png" alt="profi.ru"></a>
+                <a href="https://docdoc.ru/doctor/Kravchenko_Aleksey"><img src="img/reviews_1.png" alt="СБЕР Здоровье"></a>
+                <a href="https://www.b17.ru/kravchenko30/"><img src="img/reviews_2.png" alt="b17.ru"></a>
+                <a href="https://profi.ru/profile/KravchenkoAA9/"><img src="img/reviews_3.png" alt="profi.ru"></a>
             </div>
         </div>
 
@@ -700,12 +707,12 @@
                     <a href="https://yandex.ru/maps/-/CCUWyWc3hB"><img src="img/icon/mail_cont.svg" alt="Адрес">ул. Цветной бульвар, д.19, с.4, каб. 209</a>
                 </div>
                 <div class="soc_nav_box">
-                    <a href=""><img src="img/icon/whatsapp.svg" alt="Whatsapp">Whatsapp</a>
-                    <a href=""><img src="img/icon/telegram.svg" alt="Telegram">Telegram</a>
+                    <a href="https://wa.me/79299004555"><img src="img/icon/whatsapp.svg" alt="Whatsapp">Whatsapp</a>
+                    <a href="https://t.me/+79263421041"><img src="img/icon/telegram.svg" alt="Telegram">Telegram</a>
                 </div>
                 <div class="soc_nav_box">
-                    <a href=""><img src="img/icon/vk.svg" alt="Вконтакте">Вконтакте</a>
-                    <a href=""><img src="img/icon/ok.svg" alt="Одноклассники">Одноклассники</a>
+                    <a href="https://vk.com/akravchenkoru"><img src="img/icon/vk.svg" alt="Вконтакте">Вконтакте</a>
+                    <a href="https://ok.ru/profile/579553265930"><img src="img/icon/ok.svg" alt="Одноклассники">Одноклассники</a>
                 </div>
                 <div class="tel_nav_box">
                     <a href="tel:+79263421041" class="tel_nav"><img src="img/icon/call_red.svg" alt="Телефон">+7 (926) 342-10-41</a>
@@ -717,9 +724,7 @@
     <section id="map">
         <div class="map">
             <div style="position:relative;overflow:hidden;">
-                <iframe src="https://yandex.ru/map-widget/v1/?azimuth=2.742087600398404&ll=37.618977%2C55.771783&mode=search&sctx=ZAAAAAgCEAAaKAoSCQ9fJoqQNldAERnG3SBaAUxAEhIJTl5kAn6N3z8RW7G%2F7J48xD8iBgABAgMEBSgKOABA3K0HSAFiIGFkZF9zbmlwcGV0PXBob3RvX2VtYmVkZGluZ3MvMi54YiNyZW1vdmVfc25pcHBldD1waG90b19lbWJlZGRpbmdzLzEueGIpY29sbGVjdGlvbnNfcmFua2luZ19tb2RlbD1jb2xsX3JlbF9hc3Nlc3NiJWNvbGxlY3Rpb25zX3JlbGV2X3RocmVzaG9sZD0xMDA2MDAwMDBiIGNvbGxlY3Rpb25zX3JldHVybl9ieV9nZW9pZD10cnVlYjlyZWFycj1zY2hlbWVfTG9jYWwvR2VvL0NvbGxlY3Rpb25zL01peEVhY2hOUG9zaXRpb249MTAwMDBiN3JlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vQ29sbGVjdGlvbnMvRmlyc3RQb3NpdGlvblRvTWl4PTNiMnJlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vQ29sbGVjdGlvbnMvRW5hYmxlZE1peD10cnVlagJydZ0BzcxMPaABAKgBAL0BERb6RcIBFMTwrLpproy56QOX%2FKK4Bt7j64AE6gEA8gEA%2BAEAggJK0LzQvtGB0LrQstCwINGD0LsuINCm0LLQtdGC0L3QvtC5INCx0YPQu9GM0LLQsNGALCDQtC4xOSwg0YEuNCwg0LrQsNCxLiAyMDmKAgCSAgMyMTOaAgxkZXNrdG9wLW1hcHM%3D&sll=37.618977%2C55.771783&sspn=0.001926%2C0.000621&text=%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%20%D1%83%D0%BB.%20%D0%A6%D0%B2%D0%B5%D1%82%D0%BD%D0%BE%D0%B9%20%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80%2C%20%D0%B4.19%2C%20%D1%81.4%2C%20%D0%BA%D0%B0%D0%B1.%20209&tilt=0.8726646259971648&whatshere%5Bpoint%5D=37.619257%2C55.771783&whatshere%5Bzoom%5D=17&z=20"
-                    allowfullscreen="true" style="position:relative;">
-                </iframe>
+                <iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=26060555631" frameborder="0"></iframe>
             </div>
         </div>
     </section>
@@ -768,10 +773,10 @@
                 <h4>Соц.сети</h4>
 
                 <div class="contact_footer">
-                    <a href=""><img src="img/icon/whatsapp.svg" alt="Whatsapp">Whatsapp</a>
-                    <a href=""><img src="img/icon/telegram.svg" alt="Telegram">Telegram</a>
-                    <a href=""><img src="img/icon/vk.svg" alt="Вконтакте">Вконтакте</a>
-                    <a href=""><img src="img/icon/ok.svg" alt="Одноклассники">Одноклассники</a>
+                    <a href="https://wa.me/79299004555"><img src="img/icon/whatsapp.svg" alt="Whatsapp">Whatsapp</a>
+                    <a href="https://t.me/+79263421041"><img src="img/icon/telegram.svg" alt="Telegram">Telegram</a>
+                    <a href="https://vk.com/akravchenkoru"><img src="img/icon/vk.svg" alt="Вконтакте">Вконтакте</a>
+                    <a href="https://ok.ru/profile/579553265930"><img src="img/icon/ok.svg" alt="Одноклассники">Одноклассники</a>
                 </div>
             </div>
         </div>

@@ -8,6 +8,14 @@
     outline: none;
 }
 
+img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
 button {
     cursor: pointer;
 }
@@ -33,6 +41,22 @@ header {
     justify-content: space-between;
     max-width: 1400px;
     margin: 0 auto;
+    transition: top 0.3s;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+.pc_header.show {
+    top: 0;
+    opacity: 1;
+    transition: top 0.3s, opacity 0.3s ease-in-out;
+}
+
+.pc_header.show.sticky {
+    opacity: 0.9;
 }
 
 header a,
@@ -900,7 +924,6 @@ img {
 }
 
 #document {
-    padding: 130px 0 0 0;
     position: relative;
 }
 
@@ -1297,3 +1320,79 @@ body.modal-open {
     text-align: center;
     color: #FFFFFF;
 }
+
+
+/* --------------- */
+
+
+/* The Modal (background) */
+
+.modal_img {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+    z-index: 99999;
+}
+
+
+/* Modal Content (image) */
+
+.modal-content_img {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 77%;
+    width: 100% !important;
+}
+
+
+/* Add Animation */
+
+#modal_img_content {
+    width: 100%;
+    max-width: 500px !important;
+    z-index: 9999;
+}
+
+
+/* The Close Button */
+
+.close_img {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close_img:hover,
+.close_img:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+
+/* 100% Image Width on Smaller Screens */

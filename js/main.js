@@ -49,3 +49,21 @@ links.forEach(link => {
         });
     });
 });
+
+// window.onscroll = function() { myFunction() };
+
+// var header = document.querySelector(".pc_header");
+// var sticky = header.offsetTop;
+
+// function myFunction() {
+//     if (window.pageYOffset > 300) {
+//         header.classList.add("show");
+//     } else {
+//         header.classList.remove("show");
+//     }
+//     if (window.pageYOffset >= sticky) {
+//         header.classList.add("sticky");
+//     } else {
+//         header.classList.remove("sticky");
+//     }
+// }
