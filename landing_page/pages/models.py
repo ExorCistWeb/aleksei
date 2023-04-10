@@ -2,7 +2,7 @@ from datetime import timezone
 from django.db import models
 
 # Create your models here.
-class image(models.Model):
+class Image(models.Model):
     data = models.DateTimeField(null=True)
     image = models.ImageField(upload_to='images/')
     subject = models.TextField(max_length=500)

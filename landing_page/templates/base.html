@@ -136,33 +136,17 @@
             <div style="--swiper-navigation-color: #000;" class="swiper mySwiper">
 
                 <div class="swiper-wrapper">
+                    {% for image in images %}
                     <div class="swiper-slide news_swiper">
-                        <img src="{% static 'img/news_1.jpg' %}" alt="">
+                        <img src="{{image.image.url}}" alt="">
 
                         <div class="news_content">
-                            <div class="data">15.04.2023</div>
-                            <h2>График работы<br>в праздничные дни</h2>
-                            <p>1, 9 мая – шашлыки, общение с друзьями и подзарядка. <br> В остальные дниприем идет по стандартному расписанию <br> с утра и до позднего вечера </p>
+                            <div class="data">{{image.date}}</div>
+                            <h2>{{image.subject}}</h2>
+                            <p>{{image.text}}</p>
                         </div>
                     </div>
-                    <div class="swiper-slide  news_swiper">
-                        <img src="{% static 'img/news_1.jpg' %}" alt="">
-
-                        <div class="news_content">
-                            <div class="data">15.04.2023</div>
-                            <h2>График работы<br>в праздничные дни</h2>
-                            <p>1, 9 мая – ши и подзарядка. <br> В остальные дниприем идет по стандартному расписанию <br> с утра и до позднего вечера </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide  news_swiper">
-                        <img src="{% static 'img/news_1.jpg' %}" alt="">
-
-                        <div class="news_content">
-                            <div class="data">15.04.2023</div>
-                            <h2>График работы<br>в праздничные дни</h2>
-                            <p>1, 9 мая – шашлыки, общение с друзьями и подзарядка. <br> В остальные дниприемрасписанию <br> с утра и до позднего вечера </p>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
                 <div class="swiper_btn">
 

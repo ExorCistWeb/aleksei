@@ -1,10 +1,32 @@
 from django.contrib import admin
-from . import models
+from .models import Image,Individual_consultation,Family_consultation,Consultation_subscription5,Consultation_subscription10,Consultation_subscription15
 
+class ImageAdmin(admin.ModelAdmin):
+    list_display = ('id','image', 'data', 'subject', 'text' )
+admin.site.register(Image, ImageAdmin) 
+#image
 
-admin.site.register(models.image) 
-admin.site.register(models.Individual_consultation) 
-admin.site.register(models.Family_consultation) 
-admin.site.register(models.Consultation_subscription5) 
-admin.site.register(models.Consultation_subscription10) 
-admin.site.register(models.Consultation_subscription15) 
+class Individual_consultationAdmin(admin.ModelAdmin):
+    list_display = ('time', 'price')
+admin.site.register(Individual_consultation) 
+
+#Individual_consultation
+class Family_consultationAdmin(admin.ModelAdmin):
+    list_display = ('time', 'price')
+admin.site.register(Family_consultation) 
+#Family_consultation
+
+#Consultation_subscription5
+class Consultation_subscription5Admin(admin.ModelAdmin):
+    list_display = ('time', 'price','discount')
+admin.site.register(Consultation_subscription5) 
+
+#Consultation_subscription10
+class Consultation_subscription10Admin(admin.ModelAdmin):
+    list_display = ('time', 'price','discount')
+admin.site.register(Consultation_subscription10) 
+
+#Consultation_subscription15
+class Consultation_subscription15Admin(admin.ModelAdmin):
+    list_display = ('time', 'price','discount')
+admin.site.register(Consultation_subscription15) 

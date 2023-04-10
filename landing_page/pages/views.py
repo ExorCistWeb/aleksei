@@ -1,5 +1,6 @@
 from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render
+from .models import Image
 
 # Create your views here.
 def index(request: HttpRequest) -> HttpResponse:
@@ -8,7 +9,8 @@ def index(request: HttpRequest) -> HttpResponse:
     :param request: Объект запроса.
     :return: Объект ответа с главной страницей.
     """
-    context = {}
+    images=Image.objects.all()
+    context = {'images':images}
     return render(request=request,
                   template_name='base.html',
                   context=context)
