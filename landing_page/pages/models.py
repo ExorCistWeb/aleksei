@@ -41,6 +41,9 @@ class Subscription(models.Model):
         verbose_name = ('Абонемент 10 консультаций')
         verbose_name_plural = ('Абонемент 10 консультаций')
 
+
+        
+
 """
 class Individual(models.Model):
     time = models.CharField(max_length=140)
