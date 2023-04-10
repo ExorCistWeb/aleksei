@@ -1,4 +1,3 @@
-
 # Create your models here.
 from datetime import timezone
 from django.db import models
@@ -19,6 +18,7 @@ class Image(models.Model):
 
 
 class Post(models.Model):
+    title = models.CharField(max_length=100)
     time = models.CharField(max_length=150)
     price = models.CharField(max_length=40)
     text = models.TextField(null=True, blank=True, max_length=100)
@@ -37,8 +37,9 @@ class Post(models.Model):
 
 
 class Subscription(models.Model):
+    title1 = models.CharField(max_length=100)
     time = models.CharField(max_length=150, null=True, blank=True)
-    price = models.CharField(max_length=40 , null=True, blank=True)
+    price1 = models.CharField(max_length=40 , null=True, blank=True)
     text = models.TextField(max_length=100, null=True, blank=True)
     maney = models.CharField(max_length=100, null=True, blank=True)
 

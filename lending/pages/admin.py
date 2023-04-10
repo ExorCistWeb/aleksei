@@ -8,10 +8,10 @@ admin.site.register(Image, ImageAdmin)
 
 
 class PostAdmin(admin.ModelAdmin):
-    list_display = ('id','time', 'price' )
+    list_display = ('id','title','time', 'price' )
 admin.site.register(Post, PostAdmin) 
 
 
 class SubscriptionAdmin(admin.ModelAdmin):
-    list_display = ('id','time', 'price', 'text', 'maney' )
+    list_display = ('id','title1','time', 'price1', 'text', 'maney' )
 admin.site.register(Subscription, SubscriptionAdmin)

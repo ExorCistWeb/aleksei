@@ -1,6 +1,3 @@
-from django.shortcuts import render
-
-# Create your views here.
 from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render
 from .models import Image, Post, Subscription#Individual,Family,Subscription5#, #Subscription10,Subscription15
