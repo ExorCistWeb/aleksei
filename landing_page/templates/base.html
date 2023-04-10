@@ -466,73 +466,34 @@
             </div>
 
             <div class="price_flex">
-    
+                {% for post in posts %}
                 <div class="price_box">
-                    {% for individual in individuals %}
                     <h6>Индивидуальная консультация</h6>
 
                     <p>Длительность</p>
-                    <h4>{{individuals.time}}</h4>
+                    <h4>{{post.time}}</h4>
                     <p>Стоимость</p>
-                    <h4>{{individuals.price}}₽</h4>
-                    {% endfor %}
-                </div>
-
-                <div class="price_box">
-                    {% for family in familys %}
-                    <h6>Семейная консультация</h6>
-
-                    <p>Длительность</p>
-                    <h4>{{familys.time}}</h4>
-                    <p>Стоимость</p>
-                    <h4>{{familys.price}} ₽</h4>
+                    <h4>{{post.price}}₽</h4>
                 </div>
                 {% endfor %}
             </div>
             <div class="price_flex">
+                {% for subscription in subscriptions %}
                 <div class="price_box">
-                    {% for subscription5 in subscription5s %}
                     <h6>Абонемент<br> <span>5</span><br> консультаций</h6>
 
                     <p>Длительность</p>
-                    <h4>{{subscription5s    .time}}</h4>
+                    <h4>{{subscription.time}}</h4>
                     <p>Стоимость</p>
-                    <h4>23 750 ₽</h4>
+                    <h4>{{subscriptions.price}}₽</h4>
 
                     <p>Специальное предложение </p>
-                    <h4 class="green">{{subscription5s.discount}}</h4>
+                    <h4 class="green">{{subscriptions.text}}</h4>
 
                     <p>Ваша экономия</p>
-                    <h4 class="green">{{subscription5s.price}}</h4>
-                    {% endfor %}
+                    <h4 class="green">{{subscriptions.maney}}₽ </h4>
                 </div>
-                <div class="price_box">
-                    <h6>Абонемент<br> <span>10</span><br> консультаций</h6>
-
-                    <p>Длительность</p>
-                    <h4>1 час 20 минут</h4>
-                    <p>Стоимость</p>
-                    <h4>45 000 ₽</h4>
-
-                    <p>Специальное предложение </p>
-                    <h4 class="green">Скидка 10%</h4>
-
-                    <p>Ваша экономия</p>
-                    <h4 class="green">5 000 ₽ </h4>
-                </div>
-                <div class="price_box">
-                    <h6>Абонемент<br> <span>15</span><br> консультаций</h6>
-                    <p>Длительность</p>
-                    <h4>1 час 20 минут</h4>
-                    <p>Стоимость</p>
-                    <h4>63 750 ₽</h4>
-
-                    <p>Специальное предложение </p>
-                    <h4 class="green">Скидка 15%</h4>
-
-                    <p>Ваша экономия</p>
-                    <h4 class="green">11 250 ₽ </h4>
-                </div>
+                {% endfor %}
             </div>
             <a href="https://psycabinet.ru/" class="green_btn green_btn_two">
                 <div class="green_btn_cont">
