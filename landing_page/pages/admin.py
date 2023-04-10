@@ -16,6 +16,7 @@ class SubscriptionAdmin(admin.ModelAdmin):
     list_display = ('id','time', 'price', 'text', 'maney' )
 admin.site.register(Subscription, SubscriptionAdmin)
 
+
 """class IndividualAdmin(admin.ModelAdmin):
     list_display = ('time', 'price')
 admin.site.register(Individual) 

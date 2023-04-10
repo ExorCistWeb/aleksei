@@ -19,7 +19,13 @@ class Image(models.Model):
 class Post(models.Model):
     time = models.CharField(max_length=150)
     price = models.CharField(max_length=40)
+    text = models.TextField(null=True, blank=True, max_length=100)
+    @classmethod
+    def create(cls, time ):
+        post  = cls( time = time)
 
+        return post 
+        
     def __str__(self) -> str:
         return str(self.time)
 
