@@ -1347,7 +1347,6 @@ body.modal-open {
     /* Hidden by default */
     position: fixed;
     /* Sit on top */
-    padding-top: 100px;
     /* Location of the box */
     left: 0;
     top: 0;
@@ -1362,6 +1361,8 @@ body.modal-open {
     background-color: rgba(0, 0, 0, 0.9);
     /* Black w/ opacity */
     z-index: 99999;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -1381,25 +1382,41 @@ body.modal-open {
 
 #modal_img_content {
     width: 100%;
-    max-width: 500px !important;
     z-index: 9999;
+}
+
+.modal_img_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#modal_img_content {
+    min-height: 60vh;
+    width: 64%;
+    max-height: 95vh;
+}
+
+.def {
+    padding-left: 15px;
 }
 
 
 /* The Close Button */
 
-.close_img {
+.modal_img_close {
     position: absolute;
-    top: 15px;
-    right: 35px;
+    top: 50px;
+    right: 50px;
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
 }
 
-.close_img:hover,
-.close_img:focus {
+.modal_img_close:hover,
+.modal_img_close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
@@ -1437,4 +1454,52 @@ body.modal-open {
 
 .fot_none {
     display: none;
+}
+
+.defis {
+    margin-right: 10px;
+}
+
+#news {
+    max-width: unset;
+}
+
+#method {
+    max-width: unset;
+}
+
+.tab_content {
+    max-height: 630px;
+    overflow-y: auto;
+}
+
+.modal_img_prev,
+.modal_img_next {
+    width: auto;
+    padding: 40px 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal_img_next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.modal_img_prev:hover,
+.modal_img_next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal_img_prev {
+    margin-right: 50px;
+    border-radius: 8px 0 0 8px;
+}
+
+.modal_img_next {
+    margin-left: 50px;
+    border-radius: 0 8px 8px 0;
 }

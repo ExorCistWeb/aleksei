@@ -17,10 +17,13 @@
 
 <body>
     <div id="modal_img" class="modal_img">
-        <div class="modal-content_img">
-            <span class="close_img" onclick="closeModal()">&times;</span>
+        <div class="modal_img_content">
+
+            <button class="modal_img_prev" onclick="prevImage()">&#10094;</button>
             <img id="modal_img_content" src="" alt="">
+            <button class="modal_img_next" onclick="nextImage()">&#10095;</button>
         </div>
+        <span class="modal_img_close" onclick="closeModal()">&times;</span>
     </div>
     <div class="modal">
         <div class="modal-content">
@@ -207,15 +210,30 @@
                 <div class="tab_flex">
                     <img src="img/about_tab1.jpg" alt="Обо мне">
                     <div class="tab_content">
-                        <h5>Дорогие друзья! Приветствую вас. Меня зовут Алексей Александрович. </h5>
                         <p>
-                            <b>Я клинический психолог.</b> Женат. Есть замечательный сынок. Раз вы попали на эту страницу, вероятно, есть вопросы или жизненные ситуации, которые сильно тревожат. <br><br> Я очень рад, что вы задумались о посещении специалиста
-                            моего нормально. Я сам задам ключевые вопросы и даже предложу пройти интересные психологические исследования. Исходя из всего объема информации, которая станет доступна на моих консультациях, вы сами примете верные решения
-                            и сделаете конкретные шаги для их осуществления.<br><br>
-                            <b>Я стараюсь воздерживаться от советов</b>, но, если потребуется мое профессиональное мнение, вы его тоже услышите. Выбор в любом случае останется за вами. Психолог – это просто и приятно. Это классно. Попробуйте! Наберитесь
-                            смелости и позвоните.<br><br> Ниже вы сможете найти подробную информацию о моем образовании, наградах, опыте работы, используемых методах и профессиональных навыках. Если у вас есть вопросы, связанные с детьми или подростками,
-                            то рекомендую познакомиться с описанием услуг на специальной странице для родителей, на которую можно попасть, кликнув по <a href="">этой ссылке</a>.
-
+                            <br><b>2017</b> Диплом об окончании аспирантуры 37.06.01 “Психологические науки”, Московский городской педагогический университет, г. Москва
+                            <br><br><b>2014</b> Диплом о профессиональной переподготовке “Клиническая психология”, Московский городской психолого-педагогический университет, г. Москва
+                            <br><br><b>2010</b> Диплом о профессиональной переподготовке “Социология и психология”, Государственная академия профессиональной переподготовки и повышения квалификации руководящих работников и специалистов инвестиционной
+                            сферы, г. Москва
+                            <br><br><b>2009</b> Президентская программа, Диплом о профессиональной переподготовке “Менеджмент в бизнесе”, Международный институт менеджмента ЛИНК, г. Жуковский
+                        </p>
+                        <h5 style="margin-top: 20px;">Курсы повышения квалификации</h5>
+                        <p><b>2022</b> “Стратегии психотерапевтической помощи пациентам с невротическими расстройствами”, Институт дополнительного профессионального образования, г. Санкт-Петербург “Психологическая экспертиза детско-родительских отношений”,
+                            Московский государственный психолого-педагогический университет, г. Москва “Система ранней помощи. Диагностика и коррекция развития у детей младенческого и раннего возраста”, Международная академия дополнительного образования,
+                            г. Москва
+                            <br><br><b>2021</b> “Речь и другие когнитивные функции с позиции прикладной нейропсихологии: структура, мозговые механизмы, нарушения, диагностика, коррекция”, Высшая школа дополнительного образования, г. Москва “Tutor in tale
+                            therapy, Secrets of Tale therapy”, European Psychological Centre, Salzburg, Austria “Возрастные особенности мозговой организации деятельности в онтогенезе и дизонтогенезе”, Институт повышения квалификации и переподготовки Дефектология
+                            ПРОФ, г. Москва “Функциональная асимметрия мозга. Проблема леворукости. Как это использовать в интересах ребенка”, Институт практической психологии «Иматон», г. Санкт-Петербург “Управление гневом. Практика коррекционной работы
+                            с лицами, проявляющими деструктивно-агрессивное (насильственное) поведение в близких отношениях”, Институт практической психологии «Иматон», г. Санкт-Петербург
+                            <br><br><b>2020</b> “Психология индивидуальности. Искусство психодиагностики”, Институт прикладной психологии, г. Москва “Когнитивно-поведенческая терапия расстройств пищевого поведения”, Московский государственный университет
+                            им. М.В. Ломоносова, г. Москва
+                            <br><br><b> 2019</b> “Семейная психотерапия”, Московский государственный университет им. М.В. Ломоносова, г. Москва “Диагностика и психотерапия детей с аутизмом и аффективными нарушениями”, Московский государственный университет
+                            им. М.В. Ломоносова, г. Москва
+                            <br><br><b> 2018</b> “Сексология для психологов”, Московский институт психоанализа, г. Москва “Детская нейропсихология: методы диагностики и коррекции”, Московский государственный университет им. М.В. Ломоносова
+                            <br><br><b>2013</b> “Формирование ключевых компетентностей руководителя и педагога образовательного учреждения”, Научно-методический центр ЮВОУО, г. Москва
+                            <br><br><b>2010</b> “Психологические основы конфликтов в ОУ и личностно-ориентированный подход в консультировании”, Московский институт открытого образования, г. Москва
+                            <br><br><b>2009</b> “Психологическое сопровождение реализации деятельностного метода обучения”, Академия повышения квалификации и профессиональной переподготовки, г. Москва
+                            <br><br><b>2003</b> “Консультант по психологическим вопросам в школе”, Московский государственный областной университет, г. Москва
                         </p>
                     </div>
                 </div>
@@ -225,13 +243,21 @@
                 <div class="tab_flex">
                     <img src="img/about_tab1.jpg" alt="Обо мне">
                     <div class="tab_content">
-                        <h5>Дорогие друзья! Приветствую вас. Меня зовут Алексей Александрович. </h5>
                         <p>
-                            <b>Я клинический психолог.</b> Женат. Есть замечательный сынок. Раз вы попали на эту страницу, вероятно, есть вопросы или жизненные ситуации, которые сильно тревожат. <br><br> Я очень рад, что вы задумались о посещении специалиста
-                            моего профиля, так как открыетные шаги для их осуществления.<br><br>
-                            <b>Я стараюсь воздерживаться от советов</b>, но, если потребуется мое профессиональное мнение, вы его тоже услышите. Выбор в любом случае останется за вами. Психолог – это просто и приятно. Это классно. Попробуйте! Наберитесь
-                            смелости и позвоните.<br><br> Ниже вы сможете найти подробную информацию о моем образовании, наградах, опыте работы, используемых методах и профессиональных навыках. Если у вас есть вопросы, связанные с детьми или подростками,
-                            то рекомендую познакомиться с описанием услуг на специальной странице для родителей, на которую можно попасть, кликнув по <a href="">этой ссылке</a>.
+                            <b>Личный психолог – это доверенное лицо.</b> Это тот специалист, с которым можно обсудить всё, даже то, о чем страшно подумать, оставаясь наедине с самим собой. Если психолог обладает достаточной квалификацией, то он всегда
+                            поймет чувства клиента, отнесется к ситуации безоценочно, а прием пройдет легко и результативно. Мою профессиональную компетентность подтверждают:
+                            <div class="def">
+                                <p> <br> <span class="defis"> - </span> многолетний практический опыт в области частного психологического консультирования;
+                                    <br> <span class="defis"> - </span> подготовка в аспирантуре МГПУ по направлению 37.06.01 «Психологические науки» с общей подготовкой в области психологии на 9628 ак. часов;
+                                    <br> <span class="defis"> - </span> владение классическими подходами, современными приемами и техниками, психодиагностическими инструментами;
+                                    <br> <span class="defis"> - </span> лауреат и член жюри престижного профессионального конкурса «Психолог года»;
+                                    <br> <span class="defis"> - </span> автор обучающих программ для педагогов-психологов;
+                                    <br> <span class="defis"> - </span> автор нескольких научных исследований и статей по вопросам детской, семейной и когнитивной психологии;
+                                    <br> <span class="defis"> - </span> психолог высшей квалификационной категории;
+                                    <br> <span class="defis"> - </span> психолог высшей квалификационной категории;<br><br> Гарантией успеха психологического консультирования служат прозрачные и четкие критерии. Они позволяют отслеживать эффективность
+                                    как разовой встречи, так и каждого этапа работы. </p>
+
+                            </div>
 
                         </p>
                     </div>
@@ -378,7 +404,9 @@
                     </h2>
                     <div class="ac-panel">
                         <p>
-                            Первичная
+                            На такой вопрос можно ответить только приблизительно. Часто клиент получает положительный результат уже после одной встречи, а бывает, что работает со специалистом три года и даже дольше. Как правило, первая, по большому счету диагностическая консультация
+                            вызывает яркие эмоции, которые помогают человеку решить вопрос о дальнейшем продолжении общения и регулярности встреч. В среднем сеансы проходят 1–2 раза в неделю. Меньшее количество консультаций также возможно. Психолог озвучит
+                            свои рекомендации, но, как и во всех других вопросах, окончательное решение остается за вами.
                         </p>
                     </div>
                 </div>
@@ -389,7 +417,7 @@
                     </h2>
                     <div class="ac-panel">
                         <p>
-                            Первичная
+                            Можно. Цена таких услуг зависит от дальности поездки специалиста и целей официального заключения. Свяжитесь, пожалуйста, с нами. Мы расскажем обо всех условиях и ответим на дополнительные вопросы.
                         </p>
                     </div>
                 </div>
@@ -400,7 +428,7 @@
                     </h2>
                     <div class="ac-panel">
                         <p>
-                            Первичная
+                            Можно. Цена таких услуг зависит от дальности поездки специалиста и целей официального заключения. Свяжитесь, пожалуйста, с нами. Мы расскажем обо всех условиях и ответим на дополнительные вопросы.
                         </p>
                     </div>
                 </div>
@@ -410,7 +438,10 @@
                     </h2>
                     <div class="ac-panel">
                         <p>
-                            Первичная
+                            Клинический психолог – это специалист с высшим психологическим образованием, который работает как со здоровыми людьми: детьми, взрослыми, семьями, – так и с теми, у кого есть то или иное психическое, неврологическое или другое заболевание. Клинический
+                            психолог – это не врач. Он не ставит диагнозы и не прописывает медикаментозное лечение, но так же, как психиатр, хорошо разбирается в психиатрии, неврологии и, конечно, специальной психологии. В случае, если клинический психолог
+                            заподозрит заболевание, он должен перенаправить клиента к врачу для получения дополнительной информации. Обращение к клиническому психологу дает больше преимуществ, чем к психологу без подобной специализации, поскольку позволяет
+                            вам получить дополнительную информацию о состоянии своего здоровья и решить любые другие психологические вопросы.
                         </p>
                     </div>
                 </div>
@@ -421,7 +452,10 @@
                     </h2>
                     <div class="ac-panel">
                         <p>
-                            Первичная
+                            Да, вы можете заказать удаленную консультацию практически через любой мессенджер. Однако обращаем внимание, что при общении в кабинете психолог получает гораздо больше данных о вас и вашей ситуации. Это достигается за счет сбора так называемой невербальной
+                            информации. Многократно проверено: наличие видеосвязи помогает, но не делает удаленную консультацию равноценной классической встрече. Кроме того, часто дискомфорт вызывают банальные проблемы с техникой, качеством и скоростью
+                            Интернета, присутствием дома родственников и т. д. Пожалуйста, заранее проверьте технику и наличие подключения к сети. Подготовьте тихое, изолированное помещение, удобное кресло или лучше диван. При возникновении проблем со
+                            связью психолог сам будет вам перезванивать. Оплата услуг осуществляется путем перевода денежных средств на банковскую карту. Обычно удаленные консультации проводятся в первой половине дня.
                         </p>
                     </div>
                 </div>
@@ -432,7 +466,8 @@
                     </h2>
                     <div class="ac-panel">
                         <p>
-                            Первичная
+                            Вся работа проводится анонимно. Для записи вы можете придумать никнейм и использовать обезличенную электронную почту. Психолог и сотрудники кабинета сохраняют в тайне личную информацию своих клиентов. В этом большой плюс работы с частным специалистом,
+                            который в первую очередь сосредоточен на интересах своих клиентов.
                         </p>
                     </div>
                 </div>
@@ -637,16 +672,30 @@
                 <div class="document_title">
                     <h2>Документы</h2>
                 </div>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="img/doc/1.png" alt="" onclick="openModal(this.src)"></div>
-                    <div class="swiper-slide"><img src="img/doc/2.png" alt="" onclick="openModal(this.src)"></div>
-                    <div class="swiper-slide"><img src="img/doc/3.png" alt="" onclick="openModal(this.src)"></div>
-                    <div class="swiper-slide"><img src="img/doc/1.png" alt="" onclick="openModal(this.src)"></div>
-                    <div class="swiper-slide"><img src="img/doc/2.png" alt="" onclick="openModal(this.src)"></div>
-                    <div class="swiper-slide"><img src="img/doc/3.png" alt="" onclick="openModal(this.src)"></div>
-                    <div class="swiper-slide"><img src="img/doc/1.png" alt="" onclick="openModal(this.src)"></div>
-                    <div class="swiper-slide"><img src="img/doc/2.png" alt="" onclick="openModal(this.src)"></div>
-                    <div class="swiper-slide"><img src="img/doc/3.png" alt="" onclick="openModal(this.src)"></div>
+                <div class="swiper-wrapper swiper_doc">
+                    <div class="swiper-slide"><img src="img/doc/1.jpg" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/2.jpg" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/3.jpg" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/4.jpg" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/5.jpg" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/6.jpg" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/7.jpg" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/8.jpg" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/9.jpg" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/10.jpg" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/11.jpg" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/12.jpg" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/13.jpg" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/14.jpg" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/15.jpg" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/16.jpg" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/17.jpg" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/18.jpg" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/19.jpg" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/20.jpg" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/21.jpg" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/22.jpg" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/doc/23.jpg" alt="" onclick="openModal(this.src)"></div>
                 </div>
 
 
@@ -670,16 +719,35 @@
                 <div class="document_title">
                     <h2>Награды</h2>
                 </div>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="img/awards/2.png" alt="" onclick="openModal(this.src)"></div>
-                    <div class="swiper-slide"><img src="img/awards/3.png" alt="" onclick="openModal(this.src)"></div>
-                    <div class="swiper-slide"><img src="img/awards/1.png" alt="" onclick="openModal(this.src)"></div>
-                    <div class="swiper-slide"><img src="img/awards/1.png" alt="" onclick="openModal(this.src)"></div>
-                    <div class="swiper-slide"><img src="img/awards/2.png" alt="" onclick="openModal(this.src)"></div>
-                    <div class="swiper-slide"><img src="img/awards/3.png" alt="" onclick="openModal(this.src)"></div>
-                    <div class="swiper-slide"><img src="img/awards/1.png" alt="" onclick="openModal(this.src)"></div>
-                    <div class="swiper-slide"><img src="img/awards/2.png" alt="" onclick="openModal(this.src)"></div>
-                    <div class="swiper-slide"><img src="img/awards/3.png" alt="" onclick="openModal(this.src)"></div>
+                <div class="swiper-wrapper swiper_awards">
+                    <div class="swiper-slide"><img src="img/awards/1.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/2.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/3.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/4.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/5.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/6.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/7.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/8.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/9.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/10.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/11.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/12.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/13.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/14.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/15.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/16.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/17.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/18.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/19.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/20.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/21.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/22.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/23.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/24.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/25.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/26.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/27.JPG" alt="" onclick="openModal(this.src)"></div>
+                    <div class="swiper-slide"><img src="img/awards/28.JPG" alt="" onclick="openModal(this.src)"></div>
                 </div>
                 <div class="swiper_btn swiper_btn_two">
 

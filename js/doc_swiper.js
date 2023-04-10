@@ -1,39 +1,3 @@
-$(document).ready(function() {
-
-    $('.openModal').click(function() {
-
-        $('.modal').show();
-
-        $('body').addClass('modal-open');
-
-    });
-
-    $('.modal-close').click(function() {
-
-        $('.modal').hide();
-
-        $('body').removeClass('modal-open');
-
-    });
-
-    $('.modal').click(function(e) {
-
-        if (e.target == this) {
-
-            $('.modal').hide();
-
-            $('body').removeClass('modal-open');
-
-        }
-
-    });
-
-});
-
-
-
-
-
 // Get the modal and image content elements
 const modal = document.getElementById("modal_img");
 const imgContent = document.getElementById("modal_img_content");

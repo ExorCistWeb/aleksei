@@ -61,6 +61,9 @@
        .about {
            align-items: flex-start;
        }
+       #modal_img_content {
+           min-height: 60vh;
+       }
    }
    
    @media (max-width: 1280px) {
@@ -332,6 +335,9 @@
        .consult {
            padding: 70px 70px;
        }
+       #modal_img_content {
+           min-height: 70vh;
+       }
    }
    
    @media (max-width: 996px) {
@@ -364,9 +370,14 @@
            margin: 0;
        }
        .news_content p {
-           overflow: hidden;
+           overflow: auto;
            margin-bottom: 30px;
-           max-height: unset;
+           min-height: 100px;
+           max-height: 100px;
+           padding-right: 0;
+       }
+       .news_content p br {
+           display: none;
        }
        .news_swiper img {
            width: 70%;
@@ -425,9 +436,18 @@
            height: 222px;
            padding: 16px;
        }
+       #modal_img_content {
+           max-height: 50vh;
+           width: 70%;
+           min-height: unset;
+           height: 100%;
+       }
    }
    
    @media (max-width: 776px) {
+       .consult_flex:nth-child(2) {
+           margin-top: 0;
+       }
        .tab {
            flex-direction: column;
            align-items: self-start;
@@ -514,7 +534,7 @@
        }
        .tablinks.active,
        .tablinks {
-           font-size: 12px;
+           font-size: 16px;
        }
        .tablinks {
            height: 28px;
@@ -652,6 +672,42 @@
        .soc_nav_box {
            margin: 0 !important;
        }
+       #helping {
+           background-size: cover;
+       }
+       .mySwiper {
+           background-image: none;
+       }
+       .modal_img_prev {
+           margin-right: 30px;
+       }
+       .modal_img_next {
+           margin-left: 30px;
+       }
+       #modal_img_content {
+           max-height: 40vh;
+           width: 70%;
+           min-height: unset;
+           height: 100%;
+       }
+   }
+   
+   @media (max-width: 600px) {
+       #modal_img_content {
+           max-height: 30vh;
+           width: 80%;
+           min-height: unset;
+           height: 100%;
+       }
+   }
+   
+   @media (max-width: 500px) {
+       .modal_img_prev {
+           margin-right: 0;
+       }
+       .modal_img_next {
+           margin-left: 0;
+       }
    }
    
    @media (max-width: 480px) {
@@ -747,7 +803,7 @@
            padding-bottom: 0;
        }
        .method_img {
-           border-radius: 0;
+           border-radius: 8px;
        }
        .ac .ac-trigger {
            padding-right: 50px;
@@ -762,5 +818,16 @@
        .ac {
            margin-bottom: 15px;
            padding-bottom: 10px;
+       }
+       #modal_img_content {
+           max-height: 25vh;
+           width: 80%;
+       }
+   }
+   
+   @media (max-width:375px) {
+       #modal_img_content {
+           max-height: 20vh;
+           width: 80%;
        }
    }

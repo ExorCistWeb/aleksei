@@ -1,43 +1,7 @@
-$(document).ready(function() {
-
-    $('.openModal').click(function() {
-
-        $('.modal').show();
-
-        $('body').addClass('modal-open');
-
-    });
-
-    $('.modal-close').click(function() {
-
-        $('.modal').hide();
-
-        $('body').removeClass('modal-open');
-
-    });
-
-    $('.modal').click(function(e) {
-
-        if (e.target == this) {
-
-            $('.modal').hide();
-
-            $('body').removeClass('modal-open');
-
-        }
-
-    });
-
-});
-
-
-
-
-
 // Get the modal and image content elements
 const modal = document.getElementById("modal_img");
 const imgContent = document.getElementById("modal_img_content");
-const images = document.querySelectorAll(".swiper_doc .swiper-slide img");
+const images = document.querySelectorAll(".swiper_awards .swiper-slide img");
 let currentImageIndex = 0;
 
 // Set the image source to the clicked image's source
@@ -69,12 +33,20 @@ function prevImage() {
 
         imgContent.src = images[currentImageIndex].src;
 
+        // Swipe to the previous slide in swiper_awards 
+        const swiperAwards = document.querySelector('.swiper_awards');
+        swiperAwards.swiper.slidePrev();
+
     } else {
 
         // If it's the first image, show the last one 
         currentImageIndex = images.length - 1;
 
         imgContent.src = images[currentImageIndex].src;
+
+        // Swipe to the last slide in swiper_awards 
+        const swiperAwards = document.querySelector('.swiper_awards');
+        swiperAwards.swiper.slideTo(images.length - 1);
 
     }
 }
@@ -88,6 +60,10 @@ function nextImage() {
 
         imgContent.src = images[currentImageIndex].src;
 
+        // Swipe to the next slide in swiper_awards 
+        const swiperAwards = document.querySelector('.swiper_awards');
+        swiperAwards.swiper.slideNext();
+
     } else {
 
         // If it's the last image, show the first one 
@@ -95,6 +71,10 @@ function nextImage() {
         currentImageIndex = 0;
 
         imgContent.src = images[currentImageIndex].src;
+
+        // Swipe to the first slide in swiper_awards 
+        const swiperAwards = document.querySelector('.swiper_awards');
+        swiperAwards.swiper.slideTo(0);
 
     }
 }
