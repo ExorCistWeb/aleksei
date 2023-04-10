@@ -3,7 +3,7 @@ from django.db import models
 
 # Create your models here.
 class Image(models.Model):
-    data = models.DateTimeField(null=True)
+    data = models.DateTimeField(null=True, blank=True)
     image = models.ImageField(upload_to='images/')
     subject = models.TextField(max_length=500)
     text = models.TextField(max_length=500)
@@ -110,3 +110,7 @@ class Consultation_subscription15(models.Model):
     class Meta:
         verbose_name = ('Абонемент 15 консультаций')
         verbose_name_plural = ('Абонемент 15 консультаций')
+
+
+class date (models.Model):
+    date = models.DateField(null=True, blank=True)
