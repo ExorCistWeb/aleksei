@@ -141,7 +141,7 @@
                         <img src="{{image.image.url}}" alt="">
 
                         <div class="news_content">
-                            <div class="data">{{image.date|date:"d.m.Y H:i"}}</div>
+                            <div class="data">{{image.data}}</div>
                             <h2>{{image.subject}}</h2>
                             <p>{{image.text}}</p>
                         </div>
@@ -466,37 +466,45 @@
             </div>
 
             <div class="price_flex">
+    
                 <div class="price_box">
+                    {% for individual in individuals %}
                     <h6>Индивидуальная консультация</h6>
 
                     <p>Длительность</p>
-                    <h4>1 час 20 минут</h4>
+                    <h4>{{individuals.time}}</h4>
                     <p>Стоимость</p>
-                    <h4>5 000 ₽</h4>
+                    <h4>{{individuals.price}}₽</h4>
+                    {% endfor %}
                 </div>
+
                 <div class="price_box">
+                    {% for family in familys %}
                     <h6>Семейная консультация</h6>
 
                     <p>Длительность</p>
-                    <h4>1 час 20 минут</h4>
+                    <h4>{{familys.time}}</h4>
                     <p>Стоимость</p>
-                    <h4>5 000 ₽</h4>
+                    <h4>{{familys.price}} ₽</h4>
                 </div>
+                {% endfor %}
             </div>
             <div class="price_flex">
                 <div class="price_box">
+                    {% for subscription5 in subscription5s %}
                     <h6>Абонемент<br> <span>5</span><br> консультаций</h6>
 
                     <p>Длительность</p>
-                    <h4>1 час 20 минут</h4>
+                    <h4>{{subscription5s    .time}}</h4>
                     <p>Стоимость</p>
                     <h4>23 750 ₽</h4>
 
                     <p>Специальное предложение </p>
-                    <h4 class="green">Скидка 5%</h4>
+                    <h4 class="green">{{subscription5s.discount}}</h4>
 
                     <p>Ваша экономия</p>
-                    <h4 class="green">1 250 ₽ </h4>
+                    <h4 class="green">{{subscription5s.price}}</h4>
+                    {% endfor %}
                 </div>
                 <div class="price_box">
                     <h6>Абонемент<br> <span>10</span><br> консультаций</h6>

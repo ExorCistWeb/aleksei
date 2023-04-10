@@ -3,7 +3,7 @@ from django.db import models
 
 # Create your models here.
 class Image(models.Model):
-    data = models.DateTimeField(null=True, blank=True)
+    data = models.DateField(null=True, blank=True)
     image = models.ImageField(upload_to='images/')
     subject = models.TextField(max_length=500)
     text = models.TextField(max_length=500)
@@ -13,10 +13,10 @@ class Image(models.Model):
 
     class Meta:
         verbose_name = ('Слайдер')
-        verbose_name_plural = ('Слайдер')
+        verbose_name_plural = ('Слайдер')   
 
-class Individual_consultation(models.Model):
-    time = models.TimeField()
+class Individual(models.Model):
+    time = models.CharField(max_length=140)
     price = models.IntegerField(
         verbose_name=('Цена'), 
         default=0
@@ -29,8 +29,8 @@ class Individual_consultation(models.Model):
         verbose_name = ('Индивидуальная консультация')
         verbose_name_plural = ('Индивидуальная консультация')
 
-class Family_consultation(models.Model):
-    time = models.TimeField()
+class Family(models.Model):
+    time = models.CharField(max_length=140)
     price = models.IntegerField(
         verbose_name=('Цена'), 
         default=0
@@ -43,19 +43,16 @@ class Family_consultation(models.Model):
         verbose_name = ('Семейная консультация')
         verbose_name_plural = ('Семейная консультация')
 
-class Consultation_subscription5(models.Model):
-    time = models.TimeField()
+class Subscription5(models.Model):
+    time = models.CharField(max_length=140)
     price = models.IntegerField(
         verbose_name=('Цена'), 
         default=0
     )
-    discount = models.IntegerField(
+    discount = models.CharField(
         verbose_name=('Специальное предложение'), 
-        default=0
-    )
-    is_discount = models.BooleanField(
-        verbose_name=('Цена по скидке?'), 
-        default=False
+        default=0,
+        max_length=140
     )
 
     def __str__(self) -> str:
@@ -67,19 +64,16 @@ class Consultation_subscription5(models.Model):
 
 
         
-class Consultation_subscription10(models.Model):
-    time = models.TimeField()
+class Subscription10(models.Model):
+    time = models.CharField(max_length=140)
     price = models.IntegerField(
         verbose_name=('Цена'), 
         default=0
     )
-    discount = models.IntegerField(
+    discount = models.CharField(
         verbose_name=('Специальное предложение'), 
-        default=0
-    )    
-    is_discount = models.BooleanField(
-        verbose_name=('Цена по скидке?'), 
-        default=False
+        default=0,
+        max_length=140
     )
 
     def __str__(self) -> str:
@@ -89,19 +83,16 @@ class Consultation_subscription10(models.Model):
         verbose_name = ('Абонемент 10 консультаций')
         verbose_name_plural = ('Абонемент 10 консультаций')
 
-class Consultation_subscription15(models.Model):
-    time = models.TimeField()
+class Subscription15(models.Model):
+    time = models.CharField(max_length=140)
     price = models.IntegerField(
         verbose_name=('Цена'), 
         default=0
     )
-    discount = models.IntegerField(
+    discount = models.CharField(
         verbose_name=('Специальное предложение'), 
-        default=0
-    )
-    is_discount = models.BooleanField(
-        verbose_name=('Цена по скидке?'), 
-        default=False
+        default=0,
+        max_length=140,
     )
 
     def __str__(self) -> str:
@@ -110,7 +101,3 @@ class Consultation_subscription15(models.Model):
     class Meta:
         verbose_name = ('Абонемент 15 консультаций')
         verbose_name_plural = ('Абонемент 15 консультаций')
-
-
-class date (models.Model):
-    date = models.DateField(null=True, blank=True)
