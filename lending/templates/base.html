@@ -480,18 +480,18 @@
             <div class="price_flex">
                 {% for subscription in subscriptions %}
                 <div class="price_box">
-                    <h6>{{subscriptions.title1}}</h6>
+                    <h6>{{subscription.title1}}</h6>
 
                     <p>Длительность</p>
                     <h4>{{subscription.time}}</h4>
                     <p>Стоимость</p>
-                    <h4>{{subscriptions.price1}}₽</h4>
+                    <h4>{{subscription.price1}}₽</h4>
 
                     <p>Специальное предложение </p>
-                    <h4 class="green">{{subscriptions.text}}</h4>
+                    <h4 class="green">{{subscription.text}}</h4>
 
                     <p>Ваша экономия</p>
-                    <h4 class="green">{{subscriptions.maney}}₽ </h4>
+                    <h4 class="green">{{subscription.maney}}₽ </h4>
                 </div>
                 {% endfor %}
             </div>

@@ -38,10 +38,10 @@ class Post(models.Model):
 
 class Subscription(models.Model):
     title1 = models.CharField(max_length=100)
-    time = models.CharField(max_length=150, null=True, blank=True)
-    price1 = models.CharField(max_length=40 , null=True, blank=True)
-    text = models.TextField(max_length=100, null=True, blank=True)
-    maney = models.CharField(max_length=100, null=True, blank=True)
+    time = models.CharField(max_length=150)
+    price1 = models.CharField(max_length=40 )
+    text = models.TextField(max_length=100)
+    maney = models.CharField(max_length=100)
 
     def __str__(self) -> str:
         return str(self.time )
